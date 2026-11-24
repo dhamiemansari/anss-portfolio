@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise HRMS design system case study · Ansari</title>
+  <meta name="description" content="A token-first design system for a six-module enterprise HRMS — built solo in under a week with an AI agent, now used in both design and code.">
+  <meta name="theme-color" content="#F45831">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Enterprise HRMS design system case study · Ansari">
+  <meta property="og:description" content="A token-first design system for a six-module enterprise HRMS — built solo in under a week with an AI agent, now used in both design and code.">
+  <meta property="og:image" content="/assets/img/NArjonOzEowqveGixobbCnYiuLc.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/img/dMT9slzYS0A83HWiABIukZHcNY.svg">
+  <link rel="apple-touch-icon" href="/assets/img/dMT9slzYS0A83HWiABIukZHcNY.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- One stylesheet per family so a missing family never breaks the others -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/case.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</svg>
+
+<!-- ============ Navigation ============ -->
+<nav class="nav" aria-label="Main">
+  <div class="nav__links">
+    <a class="pill" href="/#work">Work</a>
+    <a class="pill" href="/about">About</a>
+    <a class="pill" href="https://drive.google.com/file/d/1poOAxf1rjtSRMvkQUFwrDHgejzjSlnrt/view" target="_blank" rel="noopener">Résumé ↓</a>
+  </div>
+  <a class="nav__logo" href="/" aria-label="ANSS — home"><img src="/assets/logo.svg" alt="ANSS" width="784" height="267"></a>
+  <div class="nav__right">
+    <p class="nav__hours">Mon–Fri<br>10:00 – 19:00 IST</p>
+    <a class="talk" href="mailto:dhamiemansari@gmail.com">Let’s talk
+      <span class="talk__arrow"><svg class="icon"><use href="#i-arrow-ur"/></svg></span>
+    </a>
+  </div>
+</nav>
+
+<main>
+<!-- ============ Hero ============ -->
+  <header class="cs-hero" style="--swirl-o:0.09">
+    <div class="swirl"></div>
+    <div class="cs-hero__inner">
+      <p class="cs-hero__label"><a href="/#work">← ALL WORK</a><span>CASE STUDY · DESIGN SYSTEM · ENTERPRISE SAAS · 6 MIN READ</span></p>
+      <h1 class="cs-hero__title">The design system came before the first screen</h1>
+      <p class="cs-hero__sub">A token-first design system for a six-module enterprise HRMS — built solo in under a week with an AI agent, and now used in both design and development.</p>
+      <div class="cs-hero__media cs-hero__media--img">
+        <img src="/assets/img/PsEcWL5eyvL6jDPD6fWB5Za7MU.png" alt="HRMS design system overview" width="2880" height="1684" fetchpriority="high">
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Story ============ -->
+  <div class="cs-body">
+    <div class="cs-cols">
+      <aside class="cs-side">
+        <a class="go-back" href="/#work">← Go back</a>
+        <nav class="sec-nav" aria-label="Case study sections">
+          <a href="#cs-overview">Overview</a>
+          <a href="#cs-problem">Problem</a>
+          <a href="#cs-demands">Demands</a>
+          <a href="#cs-principles">Principles</a>
+          <a href="#cs-process">Process</a>
+          <a href="#cs-shipped">What shipped</a>
+          <a href="#cs-impact">Impact</a>
+          <a href="#cs-reflection">Reflection</a>
+        </nav>
+      </aside>
+
+      <div class="cs-story">
+        <section class="cs-sec" id="cs-overview">
+          <h2 class="cs-h2">First, a little context</h2>
+          <div class="cs-block">
+            <h3 class="cs-h3">About the client</h3>
+            <p class="cs-p">An Indian enterprise (under NDA) building an HRMS: one platform for employees, policies, payroll-adjacent masters, settings and super-admin controls. It was planned as a large product that would keep growing, module by module.</p>
+          </div>
+          <div class="cs-block">
+            <h3 class="cs-h3">Overview</h3>
+            <p class="cs-p">Before any screen was designed, I built the design system on my own. Three designers then designed the platform on top of it, and the development team built the same components in code.</p>
+          </div>
+          <div class="cs-facts">
+            <div><h3 class="cs-h3">Role</h3><p class="cs-p">Sole designer of the design system</p></div>
+            <div><h3 class="cs-h3">Timeline</h3><p class="cs-p">4–5 days for v1</p></div>
+            <div><h3 class="cs-h3">Tools</h3><p class="cs-p">Figma · Claude + Figma agent (MCP)</p></div>
+            <div><h3 class="cs-h3">Client</h3><p class="cs-p">Enterprise HRMS · Indian client · NDA</p></div>
+          </div>
+          <div class="cs-group">
+            <h3 class="cs-h3">Outcomes</h3>
+            <div class="cs-grid">
+              <div class="cs-card cs-card--tight cs-card--out"><h4 class="cs-h3">4–5 days</h4><p class="cs-card__d">To build v1 of the system, solo</p></div>
+              <div class="cs-card cs-card--tight cs-card--out"><h4 class="cs-h3">28 components</h4><p class="cs-card__d">With full states, on 227 tokens</p></div>
+              <div class="cs-card cs-card--tight cs-card--out"><h4 class="cs-h3">3 designers</h4><p class="cs-card__d">Plus a dev team, building from one source</p></div>
+            </div>
+          </div>
+          <div class="cs-key">
+            <p class="cs-kicker">KEY POINT</p>
+            <p class="cs-p">On a platform this big, inconsistency compounds. Every screen drawn without a system is a screen someone redraws later — so the system had to come first.</p>
+          </div>
+        </section>
+
+        <section class="cs-sec" id="cs-problem">
+          <h2 class="cs-h2">The system had one job: let several people build a large product in parallel without it drifting apart</h2>
+          <div class="cs-problem">
+            <p class="cs-kicker">CORE PROBLEM STATEMENT</p>
+            <p class="cs-problem__q">“A team of three designers is building a six-module enterprise HRMS. They need one shared set of tokens and components, so they can ship every module looking and behaving the same.”</p>
+            <p class="cs-problem__note">Written as a user story — user, role, need and goal — before any component was drawn.</p>
+          </div>
+          <p class="cs-p"><b>Developers needed the same thing from the other side: </b>component names and states that match what they build.</p>
+        </section>
+
+        <section class="cs-sec" id="cs-demands">
+          <h2 class="cs-h2">Four demands shaped what the system had to cover</h2>
+          <p class="cs-p">Looking at the platform’s first modules, these four set the scope of the system.</p>
+          <div class="cs-grid" style="--cols:2">
+            <div class="cs-card"><p class="cs-card__n">01</p><h4 class="cs-h3">Six modules, three designers</h4><p class="cs-card__d">Login, employee management, policies, settings, masters and super admin — designed in parallel.</p></div>
+            <div class="cs-card"><p class="cs-card__n">02</p><h4 class="cs-h3">Data-heavy screens</h4><p class="cs-card__d">Tables, filters, bulk upload and row actions appear on almost every page.</p></div>
+            <div class="cs-card"><p class="cs-card__n">03</p><h4 class="cs-h3">Light and dark from day one</h4><p class="cs-card__d">The theme layer carries both modes, so no component hard-codes a colour.</p></div>
+            <div class="cs-card"><p class="cs-card__n">04</p><h4 class="cs-h3">Built in code too</h4><p class="cs-card__d">Developers implement the same components, so names and states had to match.</p></div>
+          </div>
+        </section>
+
+        <section class="cs-sec" id="cs-principles">
+          <h2 class="cs-h2">Three rules kept a fast build from turning into a messy one</h2>
+          <p class="cs-p">Speed came from the AI agent. These rules made sure speed didn’t cost consistency.</p>
+          <div class="cs-grid">
+            <div class="cs-card"><p class="cs-card__n">01</p><h4 class="cs-h3">Theme before components</h4><p class="cs-card__d">Tokens first, so every component — and every AI-generated variant — is on-brand from the first run.</p></div>
+            <div class="cs-card"><p class="cs-card__n">02</p><h4 class="cs-h3">Borrow structure, own the brand</h4><p class="cs-card__d">Component anatomy comes from a proven open-source kit; the look comes entirely from the client’s theme.</p></div>
+            <div class="cs-card"><p class="cs-card__n">03</p><h4 class="cs-h3">Every change is versioned</h4><p class="cs-card__d">A changelog with semantic versions, so designers and developers always know what moved.</p></div>
+          </div>
+        </section>
+
+        <section class="cs-sec" id="cs-process">
+          <h2 class="cs-h2">Breaking down the build, step by step</h2>
+          <p class="cs-p">Theme first, then the agent, then the rules for changing it.</p>
+
+          <div class="cs-step">
+            <h3 class="cs-h3">1. The theme came first, built by hand</h3>
+            <ul class="cs-bullets">
+              <li class="cs-p"><span><b>Problem identified: </b>Components built before tokens end up full of raw values that drift module by module.</span></li>
+              <li class="cs-p"><span><b>What I did: </b>Set the tokens in three layers — a base scale, a theme layer with light and dark modes, and a full colour palette — with typography, shadows and spacing set the same way.</span></li>
+              <li class="cs-p"><span><b>Why it mattered: </b>Nothing downstream would ever need a raw value.</span></li>
+            </ul>
+            <figure class="cs-fig">
+              <img src="/assets/img/YvtLMSw9AvNxfSMQ4ClY6ipxVKk.png" alt="Token layers — 12 base values feed 25 theme tokens in light and dark, which feed 190 colours" loading="lazy" width="2880" height="1684">
+              <figcaption>Token layers — 12 base values feed 25 theme tokens in light and dark, which feed 190 colours</figcaption>
+            </figure>
+          </div>
+
+          <div class="cs-step">
+            <h3 class="cs-h3">2. Components were built with an AI agent — and judged by me</h3>
+            <ul class="cs-bullets">
+              <li class="cs-p"><span><b>What the agent did: </b>Generated component frames, variants and states through Figma’s MCP connection, applied theme tokens and text styles to every layer, and repeated the pattern across all 28 components.</span></li>
+              <li class="cs-p"><span><b>What I did: </b>Built the theme and the naming before any component, chose which components and states the platform needed, and reviewed every component, fixing what didn’t hold up.</span></li>
+              <li class="cs-p"><span><b>Why the order mattered: </b>Because the theme came first, the agent never had to guess a colour or a font. Its output was on-brand from the first run — my time went into judgement, not pixel-pushing.</span></li>
+            </ul>
+            <figure class="cs-fig">
+              <img src="/assets/img/rNa0ID0tMXZUIbT2o5ZfpwC88.png" alt="Component sheet — every variant and state, built on theme tokens" loading="lazy" width="2880" height="1684">
+              <figcaption>Component sheet — every variant and state, built on theme tokens</figcaption>
+            </figure>
+          </div>
+
+          <div class="cs-step">
+            <h3 class="cs-h3">3. A changelog the whole team writes in</h3>
+            <ul class="cs-bullets">
+              <li class="cs-p"><span><b>Problem identified: </b>Once three designers and a development team depend on a system, an unannounced change is a bug.</span></li>
+              <li class="cs-p"><span><b>What I did: </b>Added a changelog page with semantic versions and a status legend — added, changed, deprecated, removed, fixed.</span></li>
+              <li class="cs-p"><span><b>Where it landed: </b>Every entry names who made it, so a fix in one place never silently breaks another.</span></li>
+            </ul>
+            <figure class="cs-fig">
+              <img src="/assets/img/6fEr2LW1koMm8kMmaTPZLKjKA.png" alt="Changelog v1.0.1 — fixes and changes logged by the designers who found them" loading="lazy" width="2880" height="1684">
+              <figcaption>Changelog v1.0.1 — fixes and changes logged by the designers who found them</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="cs-sec" id="cs-shipped">
+          <h2 class="cs-h2">What’s inside the system</h2>
+          <div class="cs-grid" style="--cols:4">
+            <div class="cs-card cs-card--tight cs-card--stat"><p class="cs-card__big">28</p><p class="cs-card__lbl">components with full states</p></div>
+            <div class="cs-card cs-card--tight cs-card--stat"><p class="cs-card__big">227</p><p class="cs-card__lbl">design tokens in 3 layers</p></div>
+            <div class="cs-card cs-card--tight cs-card--stat"><p class="cs-card__big">69</p><p class="cs-card__lbl">text styles</p></div>
+            <div class="cs-card cs-card--tight cs-card--stat"><p class="cs-card__big">2</p><p class="cs-card__lbl">modes: light and dark</p></div>
+          </div>
+          <p class="cs-p">Components include buttons, inputs and text areas, selects and dropdowns, date picker, OTP input, number and search fields, tables, tabs, pagination, modals, drawers, alert dialogs, toasts, tooltips, avatars, breadcrumbs, skeletons, switches, radios and the side menu.</p>
+          <figure class="cs-fig">
+            <img src="/assets/img/mtcLYFvP3oN1qmL6olz6QbHIk.png" alt="In use — a master-data list and form, built entirely from system components" loading="lazy" width="2880" height="1684">
+            <figcaption>In use — a master-data list and form, built entirely from system components</figcaption>
+          </figure>
+        </section>
+
+        <section class="cs-sec" id="cs-impact">
+          <div class="cs-impact" style="--impact-gap:32px">
+            <p class="cs-kicker">SO, DID IT WORK?</p>
+            <h2 class="cs-h2">Impact after release</h2>
+            <div class="cs-istats">
+              <div class="cs-istat"><p class="cs-istat__n">4–5 days</p><p class="cs-istat__t">to build v1</p></div>
+              <div class="cs-istat"><p class="cs-istat__n">6</p><p class="cs-istat__t">modules built on it</p></div>
+              <div class="cs-istat"><p class="cs-istat__n">3</p><p class="cs-istat__t">designers, one source</p></div>
+              <div class="cs-istat"><p class="cs-istat__n">2</p><p class="cs-istat__t">sides: design and code</p></div>
+            </div>
+            <p class="cs-p">The client doesn’t share product metrics, so I measure this by what the system made possible:</p>
+            <ul class="cs-bullets">
+              <li class="cs-p"><span>The system existed before the first screen — nothing had to be redesigned to fit it later.</span></li>
+              <li class="cs-p"><span>Three designers built the platform’s modules from the same components and tokens.</span></li>
+              <li class="cs-p"><span>The development team built the same components in code, with matching names and states.</span></li>
+              <li class="cs-p"><span>Changes are versioned, so a fix in one place doesn’t silently break another.</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cs-sec" id="cs-reflection">
+          <h2 class="cs-h2">What I would do differently next time</h2>
+          <p class="cs-p">Working with an AI agent changed where my time went. The slow part of a design system used to be drawing every state; here it was deciding what the system should be — the theme, the naming, the components the product actually needed.</p>
+          <p class="cs-p"><b>Write the decisions down next to the components. </b>Next, I’d add usage guidelines to each component — when to use it, and when not to — and finish the five components still paused. A system is only as consistent as the decisions written down next to it.</p>
+        </section>
+      </div>
+      <div class="cs-spacer"></div>
+    </div>
+  </div>
+
+  <!-- ============ Next case ============ -->
+  <section class="cs-next" aria-label="Next case study">
+    <a class="cs-next__link" href="/sveltego" style="--spin:-45deg">
+      <span class="cs-next__copy">
+        <span class="cs-next__kicker">NEXT CASE STUDY</span>
+        <span class="cs-next__title">Sveltego fashion app</span>
+      </span>
+      <span class="cs-next__arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+</main>
+
+<!-- ============ Footer / Contact ============ -->
+<footer class="footer" id="contact">
+  <div class="label-row"><span class="label-row__n">(05)</span><span class="label-row__t">CONTACT</span></div>
+  <div class="footer__top">
+    <div class="footer__message">
+      <h2 class="footer__headline">Let’s make<br>the hard screens<br><em>feel easy.</em></h2>
+      <a class="footer__email" href="mailto:dhamiemansari@gmail.com">dhamiemansari@gmail.com</a>
+      <a class="cta" href="mailto:dhamiemansari@gmail.com">Start a conversation
+        <span class="cta__arrow"><svg class="icon"><use href="#i-arrow-r"/></svg></span>
+      </a>
+    </div>
+    <div class="footer__art">
+      <img src="/assets/img/RTUVJ7Y61MXbLYpT169H3jozbfE.png" alt="Pencil self-portrait of Ansari holding a coffee" loading="lazy" width="1222" height="1222">
+    </div>
+  </div>
+  <div class="footer__info">
+    <dl><dt>ELSEWHERE</dt>
+      <dd><a href="https://www.behance.net/anzz" target="_blank" rel="noopener">Behance ↗</a></dd>
+      <dd><a href="https://www.linkedin.com/in/dhamiem-ansari-42543a215/" target="_blank" rel="noopener">LinkedIn ↗</a></dd>
+      <dd><a href="https://www.instagram.com/artbyanss_/" target="_blank" rel="noopener">Instagram — @artbyanss_ ↗</a></dd>
+    </dl>
+    <dl><dt>BASED IN</dt><dd>Chennai, India</dd><dd>IST (UTC +5:30)</dd><dd>Mon–Fri · 10:00–19:00</dd></dl>
+    <dl><dt>RÉSUMÉ</dt>
+      <dd><a href="https://drive.google.com/uc?export=download&amp;id=1poOAxf1rjtSRMvkQUFwrDHgejzjSlnrt" target="_blank" rel="noopener">Download PDF ↓</a></dd>
+      <dd>Updated Nov 2026</dd>
+    </dl>
+    <dl><dt>CURRENTLY</dt><dd>Product Designer</dd><dd>at Rootquotient</dd><dd>Open to conversations</dd></dl>
+  </div>
+  <a class="footer__wordmark" href="/" aria-label="ANSS — home">ANSS</a>
+  <div class="footer__colophon">
+    <span>© 2026 Dhamiem Ansari — designed in Figma, sketched by hand, Chennai</span>
+    <a href="#" data-top>Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="/js/site.js" defer></script>
+<script src="/js/case.js" defer></script>
+</body>
+</html>

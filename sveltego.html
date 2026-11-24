@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sveltego — fashion try-at-home app case study · Ansari</title>
+  <meta name="description" content="Self-initiated product: a mobile-first fashion app that lets you try curated outfits at home before you buy.">
+  <meta name="theme-color" content="#F45831">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sveltego — fashion try-at-home app case study · Ansari">
+  <meta property="og:description" content="Self-initiated product: a mobile-first fashion app that lets you try curated outfits at home before you buy.">
+  <meta property="og:image" content="/assets/img/NArjonOzEowqveGixobbCnYiuLc.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/img/dMT9slzYS0A83HWiABIukZHcNY.svg">
+  <link rel="apple-touch-icon" href="/assets/img/dMT9slzYS0A83HWiABIukZHcNY.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- One stylesheet per family so a missing family never breaks the others -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400..600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/story.css">
+  <link rel="stylesheet" href="/css/sveltego.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+</svg>
+
+<!-- ============ Navigation ============ -->
+<nav class="nav" aria-label="Main">
+  <div class="nav__links">
+    <a class="pill" href="/#work">Work</a>
+    <a class="pill" href="/about">About</a>
+    <a class="pill" href="https://drive.google.com/file/d/1poOAxf1rjtSRMvkQUFwrDHgejzjSlnrt/view" target="_blank" rel="noopener">Résumé ↓</a>
+  </div>
+  <a class="nav__logo" href="/" aria-label="ANSS — home"><img src="/assets/logo.svg" alt="ANSS" width="784" height="267"></a>
+  <div class="nav__right">
+    <p class="nav__hours">Mon–Fri<br>10:00 – 19:00 IST</p>
+    <a class="talk" href="mailto:dhamiemansari@gmail.com">Let’s talk
+      <span class="talk__arrow"><svg class="icon"><use href="#i-arrow-ur"/></svg></span>
+    </a>
+  </div>
+</nav>
+
+<main>
+<div class="st sv">
+  <!-- ============ Hero ============ -->
+  <header class="sv-hero">
+    <div class="sv-stage" style="--h:1010px">
+      <div class="sv-card">
+        <p class="sv-meta"><span>SVELTEGO</span><span>UI / UX</span><span>SIDE PRODUCT · CASE STUDY</span><span>2025</span></p>
+        <h1 class="sv-giant">Sveltego</h1>
+        <img class="sv-hero__model" src="/assets/img/5i82oSSq8ya6wYgZDOYemtWzhA.png" alt="Model in reflective sunglasses" width="2149" height="2400" fetchpriority="high">
+        <div class="sv-intro"><b>SvelteGo</b><p>We reimagine online fashion shopping — solving the biggest gaps people face today: buying without trying, return hassles and overwhelming choice.</p></div>
+        <p class="sv-mono" style="left:1000px;top:880px">/start</p>
+        <p class="sv-pill" style="background:#FFFF4E;color:#713689;left:930px;top:500px;transform:rotate(8deg);z-index:4">Try before you buy</p>
+        <p class="sv-pill" style="background:#fff;color:#713689;left:120px;top:500px;transform:rotate(-6deg);z-index:4;padding:10px 18px;font-size:15px">Style on the Go ✦</p>
+        <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:42px;left:1060px;top:410px;z-index:4"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFF4E"/></svg>
+        <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:22px;left:230px;top:440px;z-index:4"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFFFF"/></svg>
+      </div>
+      <img class="sv-walk" src="/assets/img/2uANMB3oTEZkW7OGSUVbj1tJgQA.png" alt="Model walking" width="2176" height="1450">
+    </div>
+  </header>
+
+  <div class="sv-ticker" aria-hidden="true"><div class="sv-track" style="--dur:58s"><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Try at home</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Curated by stylists</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>No return hassles</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg><span>Style on the go</span><svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:26px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg></div></div>
+
+  <!-- ============ About ============ -->
+  <section class="st-sec st-paper sv-about" aria-labelledby="sv-about">
+    <div class="st-inner">
+      <div class="sv-top">
+        <div class="sv-top__s">
+          <p class="st-eyebrow">✦  ABOUT THE PROJECT</p>
+          <h2 class="st-h2 lb" id="sv-about">Online fashion asks you to <em>buy without trying.</em> svelteGo brings the fitting room home.</h2>
+        </div>
+        <div class="sv-top__b"><p>SvelteGo is a mobile-first fashion app that helps people shop with confidence. It tackles sizing doubts, return hassles and endless choice with a “Try at Home” experience — curated outfits from personal stylists, delivered to the door, paid for only if they’re kept.</p></div>
+      </div>
+      <dl class="st-meta">
+        <div><dt>TYPE</dt><dd>Self-initiated side product</dd></div>
+        <div><dt>MY ROLE</dt><dd>Research, UX, UI &amp; brand</dd></div>
+        <div><dt>PLATFORM</dt><dd>iOS · Android</dd></div>
+        <div><dt>MARKET</dt><dd>Urban India</dd></div>
+        <div><dt>YEAR</dt><dd>2025</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ Problem ============ -->
+  <section class="sv-prob" aria-labelledby="sv-prob">
+    <div class="sv-stage" style="--h:1080px">
+      <p class="st-eyebrow sv-light" style="left:72px;top:130px">✦  THE PROBLEM</p>
+      <h2 class="st-h2 st-h2--light" id="sv-prob" style="left:72px;top:170px">What’s broken in<br><em>online fashion?</em></h2>
+      <img class="sv-prob__model" src="/assets/img/Q9F0GTXexJzlLCEbPd34j84xag.png" alt="Model in Y2K outfit" loading="lazy" width="1392" height="2600">
+      <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:64px;left:860px;top:150px"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFF4E"/></svg>
+      <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:28px;left:1340px;top:420px;z-index:2"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFFFF"/></svg>
+      <div class="sv-pain" style="background:#FFFF4E;color:#713689;--r:-3deg;left:72px;top:420px"><span>01</span><b>Fit is a guess</b><p>Shoppers can’t tell how clothes will fit, feel or look before buying.</p></div>
+      <div class="sv-pain" style="background:#FFFFFF;color:#140A18;--r:2deg;left:430px;top:400px"><span>02</span><b>Returns pile up</b><p>Expectations don’t match reality — so return rates stay high.</p></div>
+      <div class="sv-pain" style="background:#B46BDB;color:#FFFFFF;--r:-2deg;left:72px;top:640px"><span>03</span><b>Too much choice</b><p>An endless catalogue leads straight to decision fatigue.</p></div>
+      <div class="sv-pain" style="background:#FFFFFF;color:#140A18;--r:3deg;left:430px;top:620px"><span>04</span><b>No human touch</b><p>Recommendations feel generic; there’s no stylist in the loop.</p></div>
+      <div class="sv-pain" style="background:#FFFF4E;color:#713689;--r:-1deg;left:250px;top:840px;width:370px"><span>05</span><b>No try-on confidence</b><p>People miss the “try before you buy” certainty of a store.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ Solution ============ -->
+  <section class="st-sec sv-lil st-center st-life sv-sol" aria-labelledby="sv-sol" style="--hw:1200px;--bw:640px">
+    <p class="st-eyebrow">✦  THE SOLUTION</p>
+    <h2 class="st-h2 st-h2--c" id="sv-sol">Three promises, <em>one fitting room.</em></h2>
+    <p class="st-body st-body--c" style="color:rgba(20,10,24,0.65)">The “try before you buy” gap, closed with three ideas — and the onboarding says exactly that, one screen each.</p>
+    <div class="sv-pillars">
+      <div class="sv-pillar sv-pur"><div class="sv-pillar__head"><span>01</span><b>Try at Home</b><p>Order a few outfits, try them in your own mirror, pay only for what you keep.</p></div><div class="sv-pillar__wrap"><div class="sv-ph" style="--dw:270px;--dh:586px;--mw:240px;--mh:521px;--pp:8px;--pr:41px;--sr:34px"><img src="/assets/img/lCcdbqNBpgluTvPFKIK0N3nXFA.png" alt="Try at Home screen" loading="lazy"></div></div></div>
+      <div class="sv-pillar sv-nite"><div class="sv-pillar__head"><span>02</span><b>Curated outfits</b><p>Personalised picks built around your preferences, size and style.</p></div><div class="sv-pillar__wrap"><div class="sv-ph" style="--dw:270px;--dh:586px;--mw:240px;--mh:521px;--pp:8px;--pr:41px;--sr:34px"><img src="/assets/img/DVnDencwd3erhJOYNK0Aw2F5SU.png" alt="Curated outfits screen" loading="lazy"></div></div></div>
+      <div class="sv-pillar" style="background:#B46BDB"><div class="sv-pillar__head"><span>03</span><b>Stylist assistance</b><p>Book a stylist for a virtual or in-person session when you want a second eye.</p></div><div class="sv-pillar__wrap"><div class="sv-ph" style="--dw:270px;--dh:586px;--mw:240px;--mh:521px;--pp:8px;--pr:41px;--sr:34px"><img src="/assets/img/SLtAYbd5603myFadJuCvq7fedM4.png" alt="Stylist assistance screen" loading="lazy"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ============ Research ============ -->
+  <section class="st-sec sv-nite sv-res" aria-labelledby="sv-res">
+    <div class="st-inner">
+      <div class="st-head">
+        <div class="st-head__title">
+          <p class="st-eyebrow">✦  RESEARCH &amp; PROCESS</p>
+          <h2 class="st-h2 st-h2--light" id="sv-res">Research first,<br><em>style second.</em></h2>
+        </div>
+        <p class="st-body">Before a single screen, I mapped the hybrid fashion market in India — who still prefers the store, why, and what online shopping keeps getting wrong.</p>
+      </div>
+      <div class="sv-steps">
+        <div class="sv-step"><p class="sv-step__top"><span>01</span><span>DISCOVERY</span></p><b>User research</b><ul><li><span>✦</span><em>Market research</em></li><li><span>✦</span><em>Competitive analysis</em></li><li><span>✦</span><em>User interviews &amp; surveys</em></li><li><span>✦</span><em>Ethnographic studies</em></li></ul></div>
+        <div class="sv-step"><p class="sv-step__top"><span>02</span><span>INSIGHTS</span></p><b>Problem definition</b><ul><li><span>✦</span><em>User pain points</em></li><li><span>✦</span><em>User personas</em></li><li><span>✦</span><em>User journey</em></li><li><span>✦</span><em>Jobs to be done</em></li></ul></div>
+        <div class="sv-step"><p class="sv-step__top"><span>03</span><span>DEVELOPMENT</span></p><b>Ideation &amp; concept</b><ul><li><span>✦</span><em>Brainstorming &amp; sketching</em></li><li><span>✦</span><em>Empathy mapping</em></li><li><span>✦</span><em>Information architecture</em></li><li><span>✦</span><em>Low-fidelity wireframes</em></li></ul></div>
+        <div class="sv-step sv-step--yel"><p class="sv-step__top"><span>04</span><span>VISUAL</span></p><b>UI &amp; visual design</b><ul><li><span>✦</span><em>Design system &amp; style guide</em></li><li><span>✦</span><em>Typography &amp; colour</em></li><li><span>✦</span><em>Accessibility</em></li></ul></div>
+      </div>
+      <div class="sv-rstats">
+        <div class="sv-rstat sv-pur"><b>$51.79B</b><div><p>Projected growth of India’s online fashion retail market by 2028 — driven by smartphones, data and social media.</p><span>SOURCE · TECHNAVIO</span></div></div>
+        <div class="sv-rstat" style="background:#B46BDB"><b>49%</b><div><p>of Indian consumers still prefer buying clothes in physical stores — a clear opening for a hybrid model.</p><span>SOURCE · PWC INDIA</span></div></div>
+        <div class="sv-rstat" style="background:#fff;color:#140A18"><b>18–40</b><div><p>Primary users: Gen Z &amp; millennials who want personal styling, busy professionals and affluent shoppers who want premium convenience.</p><span>SOURCE · PERSONA RESEARCH</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Personas ============ -->
+  <section class="st-sec st-paper sv-pers" aria-labelledby="sv-pers">
+    <div class="st-inner">
+      <div class="st-head__title">
+        <p class="st-eyebrow">✦  WHO WE’RE DESIGNING FOR</p>
+        <h2 class="st-h2" id="sv-pers">Four shoppers, <em>four kinds of “not sure”.</em></h2>
+      </div>
+      <div class="sv-cards">
+        <article class="sv-persona"><div class="sv-persona__stage" style="background:#B46BDB"><img src="/assets/img/9WWIVVPZQm8d33pY2xEjSI24fM.png" alt="Aditi Sharma" loading="lazy" width="134" height="300"></div><div class="sv-persona__body"><b>Aditi Sharma</b><span>28 · Working professional · Bangalore</span><dl><dt style="color:#1F9D57">GOALS</dt><dd>— Look stylish at work without hours of shopping</dd><dd>— Find outfits for her body type and skin tone</dd></dl><dl><dt style="color:#D6336C">FRUSTRATIONS</dt><dd>— Can’t try clothes before buying</dd><dd>— Overwhelmed by too many options</dd></dl></div></article>
+        <article class="sv-persona"><div class="sv-persona__stage" style="background:#FFFF4E"><img src="/assets/img/VYBB2V7YcvFL1SJghQp2eTKmDmI.png" alt="Arjun Mehta" loading="lazy" width="169" height="300"></div><div class="sv-persona__body"><b>Arjun Mehta</b><span>30 · Marketing manager · Chennai</span><dl><dt style="color:#1F9D57">GOALS</dt><dd>— Keep up with trends</dd><dd>— Shop conveniently, with less effort</dd></dl><dl><dt style="color:#D6336C">FRUSTRATIONS</dt><dd>— Hates visiting malls with his kids</dd><dd>— Online returns are too much work</dd></dl></div></article>
+        <article class="sv-persona"><div class="sv-persona__stage" style="background:#E7D3F2"><img src="/assets/img/RS1NCPStEdwQKx31O01Yrq5S7ls.png" alt="Tara" loading="lazy" width="144" height="300"></div><div class="sv-persona__body"><b>Tara</b><span>20 · Fashion student · Chennai</span><dl><dt style="color:#1F9D57">GOALS</dt><dd>— Stand out with unique outfits</dd><dd>— Explore trends affordably</dd></dl><dl><dt style="color:#D6336C">FRUSTRATIONS</dt><dd>— Most brands don’t get Gen Z fashion</dd><dd>— Tight budget — can’t risk wrong buys</dd></dl></div></article>
+        <article class="sv-persona"><div class="sv-persona__stage" style="background:#713689"><img src="/assets/img/WxRKTvnR3MMm2JwQmO11drdd24.png" alt="Priya &amp; Rahul" loading="lazy" width="225" height="300"></div><div class="sv-persona__body"><b>Priya &amp; Rahul</b><span>HR &amp; IT consultants · Pune</span><dl><dt style="color:#1F9D57">GOALS</dt><dd>— Shop for themselves and their toddler</dd><dd>— Avoid crowded places</dd></dl><dl><dt style="color:#D6336C">FRUSTRATIONS</dt><dd>— Stylish, comfortable family wear is hard to find</dd><dd>— Returns are stressful with a kid at home</dd></dl></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Journey map ============ -->
+  <section class="st-sec sv-pur sv-jm" aria-labelledby="sv-jm">
+    <div class="st-inner">
+      <div class="st-head__title">
+        <p class="st-eyebrow sv-light">✦  CUSTOMER JOURNEY MAP</p>
+        <h2 class="st-h2 st-h2--light" id="sv-jm">From “is this even in my area?” <em>to “I’m keeping it.”</em></h2>
+      </div>
+      <div class="sv-grid">
+        <div class="sv-stages"><i></i><div><span>01</span><b>Onboarding &amp; sign-up</b></div><div><span>02</span><b>Browsing &amp; selection</b></div><div><span>03</span><b>Booking the trial</b></div><div><span>04</span><b>Home try-on</b></div><div><span>05</span><b>Purchase decision</b></div></div>
+        <div class="sv-row "><span>DOES</span><p class="sv-cell">Visits the app and signs up.</p><p class="sv-cell">Explores categories, adds outfits to a trial cart, picks sizes.</p><p class="sv-cell">Confirms the selection and schedules a free home trial.</p><p class="sv-cell">Receives the clothes and tries them on at home.</p><p class="sv-cell">Decides what to keep and what to return.</p></div>
+        <div class="sv-row sv-row--i"><span>THINKS</span><p class="sv-cell">“Is this service available in my area?”</p><p class="sv-cell">“Will this size fit? Should I try two?”</p><p class="sv-cell">“I hope delivery is on time and returns are easy.”</p><p class="sv-cell">“These fit! But one needs a different size.”</p><p class="sv-cell">“Do I really need this? Any discounts?”</p></div>
+        <div class="sv-row "><span>PAIN</span><p class="sv-cell">A complex sign-up may cause drop-offs.</p><p class="sv-cell">Confusion about sizing, images and trial limits.</p><p class="sv-cell">Fear of delays and difficult return policies.</p><p class="sv-cell">Some items may not fit or suit.</p><p class="sv-cell">Hesitation over price or choice.</p></div>
+        <div class="sv-row sv-row--o"><span>OPPORTUNITY</span><p class="sv-cell">Fast social sign-up and clear service-area info.</p><p class="sv-cell">AI size help, real reviews and model size references.</p><p class="sv-cell">Same/next-day delivery, clear returns, live tracking.</p><p class="sv-cell">Easy size re-order without a full return.</p><p class="sv-cell">Personalised offers to nudge the decision.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ User flow (desktop only) ============ -->
+  <section class="sv-flow sv-lil" aria-labelledby="sv-flow" style="justify-content:center">
+    <div class="sv-flow__in">
+      <div class="sv-flow__head"><p class="st-eyebrow" style="text-align:center">✦  USER FLOW</p>
+      <h2 class="st-h2" id="sv-flow">Two minutes from splash <em>to your first outfit.</em></h2></div>
+      <p class="sv-chain"><span>Splash</span><i>→</i><span>Onboarding ×3</span><i>→</i><span>Login / Sign up</span><i>→</i><span>OTP verification</span></p>
+      <p class="sv-down">↓</p>
+      <p class="sv-chain"><span>Gender</span><i>→</i><span>Clothing size</span><i>→</i><span>Styles you love</span><i>→</i><span>Location</span><i>→</i><span>Home</span></p>
+      <p class="sv-down">↓</p>
+      <div class="sv-branches">
+        <div class="sv-branch sv-pur" style="color:#fff"><b>Categories</b><p>✦  Trending now</p><p>✦  New arrivals</p><p>✦  Live try picks</p><p>✦  Filters — size, gender, price, brand, colour</p></div>
+        <div class="sv-branch sv-nite" style="color:#fff"><b>Stylist</b><p>✦  Favourite stylists</p><p>✦  Trending creators</p><p>✦  Stylist profile</p><p>✦  View product → Book stylist → Buy now</p></div>
+        <div class="sv-branch" style="background:#FFFF4E;color:#713689"><b>Favourite</b><p>✦  Saved looks</p><p>✦  Filter by category</p><p>✦  Quick add to trial cart</p></div>
+        <div class="sv-branch" style="background:#fff;color:#140A18"><b>Profile</b><p>✦  Payment</p><p>✦  My orders</p><p>✦  Settings</p><p>✦  Privacy policy</p><p>✦  Log out</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Statement ============ -->
+  <section class="sv-state" aria-labelledby="sv-state">
+    <div class="sv-stage" style="--h:860px">
+      <p class="st-eyebrow">✦  THE IDEA, IN ONE BREATH</p>
+      <h2 class="sv-state__t" id="sv-state">At Sveltego we bring the confidence of offline shopping to your home — try at home, curated collections and a seamless journey. No second-guessing. No tedious returns.</h2>
+      <img class="sv-state__model" src="/assets/img/tuwygDlR8sbjsAGpkObEyHXBUTc.png" alt="Model reaching out" loading="lazy" width="2251" height="1500">
+      <div class="sv-band" aria-hidden="true"><div class="sv-track" style="--dur:84s"><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span><span>Curated fashion, delivered to your doorstep. No stress. No guesswork. Just style. ✦</span></div></div>
+    </div>
+  </section>
+
+  <!-- ============ UI 01 Onboarding ============ -->
+  <section class="st-sec st-paper sv-ui" aria-label="Onboarding and sign-up">
+    <div class="st-inner">
+      <div class="st-head" style="--side:420px">
+        <div class="st-head__title">
+          <p class="sv-labelrow"><span class="sv-uipill" style="background:#713689;color:#fff">UI 01</span><span class="st-eyebrow" style="color:#713689">ONBOARDING &amp; SIGN-UP</span></p>
+          <h2 class="st-h2">Login in seconds,<br><em>no password to forget.</em></h2>
+        </div>
+        <p class="sv-body">Enter a mobile number, get an OTP, you’re in — Google sign-in as a fallback. A first-order offer sits right above the form, so the reason to sign up is never in doubt.</p>
+      </div>
+      <div class="sv-onb">
+        <div class="sv-ph" style="--dw:290px;--dh:629px;--mw:240px;--mh:521px;--pp:9px;--pr:44px;--sr:36px;transform:rotate(-5deg)"><img src="/assets/img/4LPTBHDFo8y25ikJ7v5SIvhYXg.png" alt="Login screen" loading="lazy"></div>
+        <div class="sv-ph" style="--dw:310px;--dh:672px;--mw:240px;--mh:520px;--pp:9px;--pr:47px;--sr:39px"><img src="/assets/img/KmdmZ3mkQEjAxQKJeeGxYMZ078.png" alt="Splash screen" loading="lazy"></div>
+        <div class="sv-ph" style="--dw:290px;--dh:629px;--mw:240px;--mh:521px;--pp:9px;--pr:44px;--sr:36px;transform:rotate(5deg)"><img src="/assets/img/ZTkXOYZ13EwbSkPnVoq73XoCW4.png" alt="OTP screen" loading="lazy"></div>
+      </div>
+      <div class="sv-notes">
+        <div><b>Login</b><p>Mobile number first; Google as a one-tap alternative, terms in plain sight.</p></div>
+        <div><b>Splash</b><p>The brand mark and “Style on the Go” — one beat before the app loads.</p></div>
+        <div><b>OTP</b><p>Six boxes, a resend timer and nothing else to think about.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UI 02 Home ============ -->
+  <section class="st-sec sv-home" aria-labelledby="sv-home">
+    <div class="sv-home__head">
+      <p class="sv-labelrow"><span class="sv-uipill" style="background:#FFFF4E;color:#713689">UI 02</span><span class="st-eyebrow sv-light">THE HOME SCREEN</span></p>
+      <h2 class="st-h2" id="sv-home">A shop window that <em>styles you back.</em></h2>
+      <p class="sv-home__p">Categories up top, a stylist’s edit straight after, offers that feel like a perk rather than a pop-up — and a spotlight row that keeps the feed fresh.</p>
+    </div>
+    <div class="sv-stage sv-anat">
+      <div class="sv-anat__screen"><img src="/assets/img/J2tIM09acznTuYMrG4senyRk41I.png" alt="SvelteGo home screen, full length" loading="lazy" width="1135" height="3430"></div>
+<div class="sv-call" style="left:72px;top:333px"><p class="sv-call__row"><span>1</span><b>Category tabs</b></p><p>All, Women, Men and Kids in one swipeable row — with a peek of each.</p></div>
+<span class="sv-lead" style="left:412px;top:349px;width:114px"></span><span class="sv-dot" style="left:523px;top:343px"></span>
+<div class="sv-call sv-call--stack" style="left:1028px;top:449px"><p class="sv-call__row"><span>Shop by moment</span><b>Ethnic · Western · Active · Night</b></p><p>Shop by moment, not by department, with tiles that show the vibe.</p></div>
+<span class="sv-lead" style="left:914px;top:465px;width:102px"></span><span class="sv-dot" style="left:903px;top:459px"></span>
+<div class="sv-call" style="left:72px;top:632px"><p class="sv-call__row"><span>3</span><b>Curated by stylist</b></p><p>A stylist’s edit sits second on the page — the human touch, up front.</p></div>
+<span class="sv-lead" style="left:412px;top:648px;width:114px"></span><span class="sv-dot" style="left:523px;top:642px"></span>
+<div class="sv-call" style="left:1028px;top:941px"><p class="sv-call__row"><span>4</span><b>Offers as perks</b></p><p>First-order savings appear as a code card, not an interruption.</p></div>
+<span class="sv-lead" style="left:914px;top:957px;width:102px"></span><span class="sv-dot" style="left:903px;top:951px"></span>
+<div class="sv-call" style="left:72px;top:1192px"><p class="sv-call__row"><span>5</span><b>Deals for you</b></p><p>Personalised discounts in a two-up grid, easy to scan with a thumb.</p></div>
+<span class="sv-lead" style="left:412px;top:1208px;width:114px"></span><span class="sv-dot" style="left:523px;top:1202px"></span>
+<div class="sv-call" style="left:1028px;top:1617px"><p class="sv-call__row"><span>6</span><b>In the spotlight</b></p><p>Featured brands, sports and ethnic edits keep the feed changing.</p></div>
+<span class="sv-lead" style="left:914px;top:1633px;width:102px"></span><span class="sv-dot" style="left:903px;top:1627px"></span>
+    </div>
+  </section>
+
+  <!-- ============ UI 03 Browse ============ -->
+  <section class="st-sec sv-lil sv-ui" aria-label="Browse, save, follow">
+    <div class="st-inner">
+      <div class="st-head" style="--side:420px">
+        <div class="st-head__title">
+          <p class="sv-labelrow"><span class="sv-uipill" style="background:#713689;color:#fff">UI 03</span><span class="st-eyebrow" style="color:#713689">BROWSE, SAVE, FOLLOW</span></p>
+          <h2 class="st-h2">Find it fast,<br><em>come back to it later.</em></h2>
+        </div>
+        <p class="sv-body">Categories read like an editorial index, favourites live one tap away, and stylists get their own space — so discovery feels personal, not endless.</p>
+      </div>
+      <div class="sv-pair">
+        <div class="sv-show sv-show--white" style="padding-bottom:20px">
+          <div class="sv-show__text"><div><b>Visual hierarchy</b><p>Category tiles carry a heading, what’s inside and an image — so you know where to start.</p></div><div><b>Easy access</b><p>Favourites collect saved looks in one place, filterable by category.</p></div></div>
+          <div class="sv-show__phones"><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:38px;--sr:31px"><img src="/assets/img/j3oKxfk2d5xNzMWTctx6vI7Ma4.png" alt="Categories screen" loading="lazy"></div><div class="sv-ph sv-ph--dhide" style="--dw:250px;--dh:542px;--mw:0px;--mh:0px;--pp:8px;--pr:38px;--sr:31px"><img src="/assets/img/YTQ6mYq3HsL2D4w2iNW8j6i3TQ.png" alt="Favourites screen" loading="lazy"></div></div>
+        </div>
+        <div class="sv-show sv-show--nite">
+          <div class="sv-show__text"><div><b>A style community</b><p>Follow favourite stylists and trending creators, and see what they’re curating.</p></div><div><b>Inside a stylist’s world</b><p>Each stylist profile shows their collections — New, Lehenga sets, New arrivals.</p></div></div>
+          <div class="sv-show__phones" style="--pg:14px;--pt:40px"><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:38px;--sr:30px"><img src="/assets/img/KsXCh3sJqSmGefviZ5vPWcgBsRs.png" alt="Stylists screen" loading="lazy"></div><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:38px;--sr:34px"><img src="/assets/img/hjfJMVlITYqBvokLouEdRzEMJEQ.png" alt="Stylist profile screen" loading="lazy"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UI 04 Profile setup ============ -->
+  <section class="sv-setup" aria-labelledby="sv-setup">
+    <div class="sv-stage" style="--h:1180px">
+      <div class="sv-giantticker" aria-hidden="true"><div class="sv-track" style="--dur:166s"><span>Profile setup ✦</span><span>Profile setup ✦</span><span>Profile setup ✦</span><span>Profile setup ✦</span><span>Profile setup ✦</span><span>Profile setup ✦</span></div></div>
+      <div class="st-head sv-ui" style="z-index:1">
+        <div class="st-head__title">
+          <p class="sv-labelrow"><span class="sv-uipill" style="background:#713689;color:#fff">UI 04</span><span class="st-eyebrow">BASIC PROFILE SETUP</span></p>
+          <h2 class="st-h2" id="sv-setup">Five taps to a wardrobe <em>that knows you.</em></h2>
+        </div>
+        <p class="sv-body">Gender, size, the styles you love and where you live — asked once, used everywhere, so the first home screen already feels personal.</p>
+      </div>
+      <div class="sv-slots" style="z-index:1">
+        <div><div class="sv-ph" style="--dw:240px;--dh:521px;--mw:240px;--mh:521px;--pp:7px;--pr:36px;--sr:30px;transform:rotate(-6deg)"><img src="/assets/img/XDocRNioPZIgkaLPIo55GFcKeA.png" alt="Setup step 1 — gender" loading="lazy"></div></div>
+        <div><div class="sv-ph" style="--dw:240px;--dh:521px;--mw:240px;--mh:521px;--pp:7px;--pr:36px;--sr:30px;transform:rotate(3deg)"><img src="/assets/img/fiRCX2aReFJL5zLvOsNhGxb9H8U.png" alt="Setup step 2 — clothing size" loading="lazy"></div></div>
+        <div><div class="sv-ph" style="--dw:240px;--dh:521px;--mw:240px;--mh:521px;--pp:7px;--pr:36px;--sr:30px;transform:rotate(-2deg)"><img src="/assets/img/Od3s7007uRIgeu0AaC34LHJ2vA.png" alt="Setup step 3 — styles you love" loading="lazy"></div></div>
+        <div><div class="sv-ph" style="--dw:240px;--dh:521px;--mw:240px;--mh:521px;--pp:7px;--pr:36px;--sr:30px;transform:rotate(4deg)"><img src="/assets/img/MAPDEpL3JEIJeA5mA816AYwlaFI.png" alt="Setup step 4 — location" loading="lazy"></div></div>
+        <div><div class="sv-ph" style="--dw:240px;--dh:521px;--mw:240px;--mh:521px;--pp:7px;--pr:36px;--sr:30px;transform:rotate(-3deg)"><img src="/assets/img/djyna1X2RxW9oB37206yyShaLVU.png" alt="Setup step 5" loading="lazy"></div></div>
+      </div>
+      <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:58px;left:1300px;top:420px;z-index:3"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#713689"/></svg>
+      <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:30px;left:110px;top:1040px;z-index:3"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFFFF"/></svg>
+    </div>
+  </section>
+
+  <!-- ============ UI 05 Product & checkout ============ -->
+  <section class="st-sec st-paper sv-ui" aria-label="Details, search, cart and filters">
+    <div class="st-inner">
+      <div class="st-head" style="--side:420px">
+        <div class="st-head__title">
+          <p class="sv-labelrow"><span class="sv-uipill" style="background:#713689;color:#fff">UI 05</span><span class="st-eyebrow" style="color:#713689">DETAILS, SEARCH, CART &amp; FILTERS</span></p>
+          <h2 class="st-h2">Decide with <em>everything in view.</em></h2>
+        </div>
+        <p class="sv-body">Product pages carry every angle and detail, search keeps your history in reach, the cart never hides the maths, and filters put you in charge of the catalogue.</p>
+      </div>
+      <div class="sv-pair">
+        <div class="sv-show sv-show--pur" style="--sh:760px">
+          <div class="sv-show__text"><div><b>Product information</b><p>Multiple angles, brand, price with discount, sizes and in-depth details in one scroll.</p></div><div><b>Clarity &amp; control</b><p>Recent searches to pick up where you left off — clear one, or clear all.</p></div></div>
+          <div class="sv-show__phones" style="--pt:10px"><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:38px;--sr:31px"><img src="/assets/img/ZFBRIaQGd86Xi8KsKAYrasrFWI.png" alt="Product details screen" loading="lazy"></div><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:34px;--sr:30px"><img src="/assets/img/QtaB4muO1qrArmM0AOEyDi6eQ.png" alt="Search screen" loading="lazy"></div></div>
+        </div>
+        <div class="sv-show sv-show--white sv-show--sm" style="--sh:760px">
+          <div class="sv-show__text"><div><b>Visibility of status</b><p>Items, quantities and an order summary with subtotal, discount and total.</p></div><div><b>Control over discovery</b><p>Filter by price, size, gender, brand and colour to narrow a big catalogue fast.</p></div></div>
+          <div class="sv-show__phones sv-cartphones" style="--pt:10px"><div class="sv-ph sv-ph--dhide" style="--dw:250px;--dh:542px;--mw:0px;--mh:0px;--pp:8px;--pr:38px;--sr:31px"><img src="/assets/img/IXK4YgEzAmp8DV2CRRsZBLgh2o.png" alt="Cart screen" loading="lazy"></div><div class="sv-ph" style="--dw:250px;--dh:542px;--mw:240px;--mh:520px;--pp:8px;--pr:38px;--sr:31px"><img src="/assets/img/KCDMp4cceFy3Oj0g6BOci3nr3Tc.png" alt="Filters screen" loading="lazy"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Brand campaign ============ -->
+  <section class="st-sec sv-nite sv-ui sv-brand" aria-label="Brand campaign">
+    <div class="st-inner">
+      <div class="st-head" style="--side:420px">
+        <div class="st-head__title">
+          <p class="sv-labelrow"><span class="sv-uipill" style="background:#FFFF4E;color:#713689">BRAND</span><span class="st-eyebrow" style="color:#fff">SVELTEGO, OUT IN THE WILD</span></p>
+          <h2 class="st-h2 st-h2--light">A brand you’d <em>stop on the escalator for.</em></h2>
+        </div>
+        <p class="sv-body">Purple, acid yellow and loud condensed type — a launch campaign across metro posters, billboards and station walls, all pointing back to one line: try before you buy, at home.</p>
+      </div>
+      <div class="sv-bento">
+        <div class="sv-bento__a">
+          <img class="sv-metro" src="/assets/img/ieOC8oVzQsQWWLQMbCenSBIkpCk.png" alt="Metro poster mockup" loading="lazy" width="1454" height="1038">
+          <div class="sv-bento__row">
+            <img class="sv-bill" src="/assets/img/RNEWyDbeTjNgEUuqFbBYC010Iro.png" alt="Billboard mockup" loading="lazy" width="955" height="716">
+            <img class="sv-stat2" src="/assets/img/XyFqUyBLMvZI92j5NaF1dhKu3pA.png" alt="Station poster wall" loading="lazy" width="1208" height="906">
+          </div>
+        </div>
+        <div class="sv-bento__b">
+          <div class="sv-fly">
+            <p>When butterfly clips ruled and baggy jeans were the vibe.</p>
+            <img src="/assets/img/hoyd9APhrNpux6TdUYH8gl2FT8.png" alt="Model in Y2K outfit" loading="lazy" width="1140" height="2227" style="left:150px;top:500px;width:300px;height:586px;object-fit:cover;z-index:1;border-radius:0">
+            <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:40px;left:40px;top:820px;z-index:2"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFF4E"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Closing ============ -->
+  <section class="sv-close" aria-label="Next case study">
+    <div class="sv-stage" style="--h:1000px">
+      <div class="sv-card">
+        <p class="sv-giant" aria-hidden="true">Sveltego</p>
+        <img class="sv-close__model" src="/assets/img/f70s8gF2CFTc44bHRiL76n0jmJA.png" alt="Model with headphones" loading="lazy" width="1600" height="2400">
+        <div class="sv-sum"><b>Style on the Go</b><p>A mobile-first fashion app that helps people shop with confidence — try at home, curated by stylists, no second-guessing and no tedious returns.</p></div>
+        <p class="sv-mono">/end</p>
+        <a class="sv-next" href="/sukha">Next: Sukha wellness app  →</a>
+        <svg class="sv-spark" viewBox="0 0 24 24" aria-hidden="true" style="--s:48px;left:1180px;top:460px;z-index:3"><path d="M12 0C13 7 17 11 24 12C17 13 13 17 12 24C11 17 7 13 0 12C7 11 11 7 12 0Z" fill="#FFFF4E"/></svg>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ============ Footer / Contact ============ -->
+<footer class="footer" id="contact">
+  <div class="label-row"><span class="label-row__n">(05)</span><span class="label-row__t">CONTACT</span></div>
+  <div class="footer__top">
+    <div class="footer__message">
+      <h2 class="footer__headline">Let’s make<br>the hard screens<br><em>feel easy.</em></h2>
+      <a class="footer__email" href="mailto:dhamiemansari@gmail.com">dhamiemansari@gmail.com</a>
+      <a class="cta" href="mailto:dhamiemansari@gmail.com">Start a conversation
+        <span class="cta__arrow"><svg class="icon"><use href="#i-arrow-r"/></svg></span>
+      </a>
+    </div>
+    <div class="footer__art">
+      <img src="/assets/img/RTUVJ7Y61MXbLYpT169H3jozbfE.png" alt="Pencil self-portrait of Ansari holding a coffee" loading="lazy" width="1222" height="1222">
+    </div>
+  </div>
+  <div class="footer__info">
+    <dl><dt>ELSEWHERE</dt>
+      <dd><a href="https://www.behance.net/anzz" target="_blank" rel="noopener">Behance ↗</a></dd>
+      <dd><a href="https://www.linkedin.com/in/dhamiem-ansari-42543a215/" target="_blank" rel="noopener">LinkedIn ↗</a></dd>
+      <dd><a href="https://www.instagram.com/artbyanss_/" target="_blank" rel="noopener">Instagram — @artbyanss_ ↗</a></dd>
+    </dl>
+    <dl><dt>BASED IN</dt><dd>Chennai, India</dd><dd>IST (UTC +5:30)</dd><dd>Mon–Fri · 10:00–19:00</dd></dl>
+    <dl><dt>RÉSUMÉ</dt>
+      <dd><a href="https://drive.google.com/uc?export=download&amp;id=1poOAxf1rjtSRMvkQUFwrDHgejzjSlnrt" target="_blank" rel="noopener">Download PDF ↓</a></dd>
+      <dd>Updated Nov 2026</dd>
+    </dl>
+    <dl><dt>CURRENTLY</dt><dd>Product Designer</dd><dd>at Rootquotient</dd><dd>Open to conversations</dd></dl>
+  </div>
+  <a class="footer__wordmark" href="/" aria-label="ANSS — home">ANSS</a>
+  <div class="footer__colophon">
+    <span>© 2026 Dhamiem Ansari — designed in Figma, sketched by hand, Chennai</span>
+    <a href="#" data-top>Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="/js/site.js" defer></script>
+</body>
+</html>

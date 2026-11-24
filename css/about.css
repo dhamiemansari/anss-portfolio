@@ -1,0 +1,143 @@
+/* ==========================================================================
+   About page
+   ========================================================================== */
+
+.ab-sec {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 72px 20px;
+  overflow: clip;
+}
+.ab-sec__inner { position: relative; z-index: 1; width: 100%; display: flex; flex-direction: column; }
+.ab-display { font-family: var(--f-display); font-weight: 900; text-transform: uppercase; line-height: 0.88; }
+
+/* ---------- Intro ---------- */
+.ab-intro { background: var(--brand); --swirl-o: 0.03; }
+.ab-intro .lbl { --lbl-n: var(--ink); --lbl-t: #fff; --lbl-b: rgba(255, 255, 255, 0.85); }
+.ab-intro__row { display: flex; flex-direction: column; gap: 20px; padding-top: 36px; }
+.ab-intro__copy { display: flex; flex-direction: column; gap: 28px; padding-bottom: 40px; }
+.ab-intro__title { display: flex; flex-direction: column; gap: 30px; }
+.ab-intro__title span {
+  font: 900 60px/0.86 var(--f-display); letter-spacing: -0.01em; color: #fff;
+  text-transform: uppercase;
+}
+.ab-intro__title .l2 { color: #332A2A; }
+.ab-intro__lede { font: 500 19px/1.45 var(--f-body); color: rgba(255, 255, 255, 0.9); }
+.ab-intro__portrait { width: 100%; height: 483px; flex: none; }
+
+.ab-stats {
+  display: flex; flex-direction: column; gap: 24px;
+  padding-top: 28px;
+  box-shadow: inset 0 1.5px 0 rgba(255, 255, 255, 0.85);
+}
+.ab-stat { display: flex; flex-direction: column; gap: 6px; }
+.ab-stat__n { font: 900 46px/0.95 var(--f-display); color: #fff; }
+.ab-stat__t { font: 500 16px/1.3 var(--f-body); color: rgba(255, 255, 255, 0.98); }
+
+/* ---------- How I work ---------- */
+.ab-how { background: var(--paper); }
+.ab-head { display: flex; flex-direction: column; gap: 20px; padding: 36px 0 64px; }
+.ab-how__title { font-size: 42px; color: var(--ink); }
+.ab-how__intro { font: 500 18px/1.45 var(--f-body); color: rgba(10, 10, 10, 0.8); }
+.ab-principles { display: flex; flex-direction: column; gap: 24px; }
+.ab-principle { display: flex; flex-direction: column; gap: 14px; padding-top: 22px; }
+.ab-principle__n { font: 600 15px/1.3 var(--f-body); color: var(--signal); }
+.ab-principle__t { font: 800 26px/1.1 var(--f-head); letter-spacing: -0.02em; color: var(--ink); }
+.ab-principle__d { font: 500 17px/1.5 var(--f-body); color: rgba(10, 10, 10, 0.78); }
+
+/* ---------- Experience ---------- */
+.ab-exp { background: var(--paper); padding: 40px 20px 72px; }
+.ab-exp .ab-sec__inner, .ab-skills .ab-sec__inner { gap: 24px; }
+.ab-exp .lbl { padding: 12px 0 0; }
+.ab-big { font-size: 50px; }
+.ab-exp__title { color: var(--ink); }
+.ab-timeline { display: flex; flex-direction: column; padding-top: 48px; }
+.ab-role {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 24px;
+  padding: 32px 0;
+  box-shadow: inset 0 1.5px 0 var(--ink);
+}
+.ab-role__when { width: 220px; font: 400 13px/1.6 var(--f-mono); letter-spacing: 0.06em; color: var(--ink); }
+.ab-role__who { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.ab-role__co { font: 800 29px/1.1 var(--f-head); letter-spacing: -0.02em; color: var(--ink); }
+.ab-role__title { font: 600 17px/1.3 var(--f-body); color: var(--signal); }
+.ab-role__desc { font: 500 17px/1.55 var(--f-body); color: rgba(10, 10, 10, 0.8); }
+.ab-tag {
+  flex: none;
+  padding: 5px 12px; border-radius: 100px;
+  box-shadow: inset 0 0 0 1px var(--ink); background: #fff;
+  font: 600 12px/1.3 var(--f-body); color: var(--ink);
+}
+
+/* ---------- Skills & tools ---------- */
+.ab-skills { background: var(--brand); }
+.ab-skills .lbl { --lbl-n: var(--ink); --lbl-t: #fff; }
+.ab-skills__title { color: #fff; }
+.ab-cols { display: flex; flex-direction: column; gap: 24px; padding: 12px 0 40px; }
+.ab-col { display: flex; flex-direction: column; gap: 10px; padding-top: 22px; }
+.ab-col__t { font: 900 34px/0.95 var(--f-display); text-transform: uppercase; color: #fff; }
+.ab-col ul { display: flex; flex-direction: column; gap: 10px; }
+.ab-col li { font: 500 18px/1.3 var(--f-body); color: rgba(255, 255, 255, 0.88); }
+.ab-tools__label { font: 400 13px/1.3 var(--f-mono); letter-spacing: 0.12em; color: var(--ink); }
+.ab-tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.ab-chip {
+  padding: 12px 20px; border-radius: 100px; background: #fff;
+  font: 600 16px/1.3 var(--f-body); color: var(--ink);
+}
+
+/* ---------- After hours ---------- */
+.ab-after { background: #0F0F0F; }
+.ab-after .lbl { --lbl-t: var(--sketch); }
+.ab-after__head { padding-bottom: 56px; }
+.ab-after__title span { display: block; font-size: 55px; color: var(--sketch); }
+.ab-after__title .l2 { color: var(--brand); }
+.ab-after__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.ab-after__copy p { font: 500 18px/1.5 var(--f-body); color: rgba(232, 229, 224, 0.85); }
+.btn-orange {
+  display: inline-flex; padding: 14px 24px; border-radius: 100px;
+  background: var(--brand); color: #fff;
+  font: 700 16px/1.3 var(--f-body); white-space: pre;
+  transition: transform 0.35s var(--spring);
+}
+.btn-orange:hover { transform: scale(1.03); }
+.ab-portraits { display: flex; flex-direction: column; gap: 24px; }
+.ab-portraits img {
+  width: 100%; height: 440px; object-fit: cover; object-position: center;
+  border-radius: 16px; transform: rotate(var(--r));
+}
+
+@media (min-width: 1440px) {
+  .ab-sec { padding: 120px 48px; }
+  .ab-sec__inner { width: 1344px; }
+
+  .ab-intro { padding: 72px 48px 96px; }
+  .ab-intro__row { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 0; }
+  .ab-intro__copy { flex: 1 1 0; }
+  .ab-intro__title span { font-size: 168px; }
+  .ab-intro__lede { width: 620px; font-size: 22px; }
+  .ab-intro__portrait { width: 640px; }
+  .ab-stats { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .ab-stat__n { font-size: 76px; }
+
+  .ab-head { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 0; }
+  .ab-how__title { font-size: 100px; }
+  .ab-how__intro { width: 360px; }
+  .ab-principles { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .ab-principle__t { font-size: 36px; }
+
+  .ab-exp { padding: 40px 48px 120px; }
+  .ab-exp .ab-sec__inner, .ab-skills .ab-sec__inner { gap: 36px; }
+  .ab-big { font-size: 118px; }
+  .ab-role { flex-direction: row; }
+  .ab-role__who { width: 420px; flex: none; }
+  .ab-role__co { font-size: 34px; }
+  .ab-role__desc { flex: 1 1 0; }
+
+  .ab-cols { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .ab-col__t { font-size: 56px; }
+  .ab-tools { gap: 10px; }
+
+  .ab-after__title span { font-size: 132px; }
+  .ab-after__copy { width: 420px; flex: none; }
+  .ab-portraits { display: grid; grid-template-columns: repeat(3, 1fr); }
+}

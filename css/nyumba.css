@@ -1,0 +1,160 @@
+/* ==========================================================================
+   Nyumba — resident app case study (bespoke sections)
+   ========================================================================== */
+
+/* Image + luminance mask pair exported from Framer */
+.mimg {
+  background: var(--img) center / cover no-repeat;
+  -webkit-mask: var(--mask) center / cover no-repeat;
+          mask: var(--mask) center / cover no-repeat;
+          mask-mode: luminance;
+}
+
+/* ---------- Hero ---------- */
+.ny-hero {
+  position: relative; overflow: clip;
+  background: linear-gradient(165deg, #18C489 0%, #12A470 55%, #0A6E4A 100%);
+}
+.ny-hero__stage {
+  display: flex; flex-direction: column; align-items: center; gap: 20px;
+  padding: 32px 20px 48px;
+}
+.ny-ring { display: none; }
+.ny-crumb {
+  width: 100%;
+  display: flex; flex-direction: column; gap: 6px;
+  padding-bottom: 18px; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.3);
+  font: 500 13px/1.4 var(--f-mono); letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.ny-crumb a { color: rgba(255, 255, 255, 0.85); }
+.ny-crumb a:hover { color: #fff; }
+.ny-crumb .dot { display: none; }
+.ny-hero__title {
+  width: 100%;
+  font: 900 96px/0.82 var(--f-display); letter-spacing: -0.01em;
+  text-align: center; color: var(--cream);
+}
+.ny-hero__phones { width: 100%; aspect-ratio: 2880 / 1320; }
+.ny-hero__chip { display: none; }
+
+/* ---------- Home anatomy ---------- */
+.ny-anat {
+  width: 100%;
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  padding: 24px 20px;
+}
+.ny-anat__screen { width: 280px; height: 895px; flex: none; }
+.ny-callout { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+.ny-callout__row { display: flex; align-items: center; gap: 12px; }
+.ny-callout__n {
+  padding: 5px 11px; border-radius: 999px; background: var(--hot);
+  font: 600 14px/1.4 var(--f-mono); color: #fff;
+}
+.ny-callout__t { font: 600 21px/1.4 var(--f-body); letter-spacing: -0.01em; color: #fff; }
+.ny-callout p { width: 340px; max-width: 100%; font: 500 16px/1.5 var(--f-body); color: rgba(255, 255, 255, 0.62); }
+.ny-leader, .ny-dot { display: none; }
+
+/* ---------- Financials ---------- */
+.ny-pay { width: 100%; height: 407px; }
+
+/* ---------- Electricity ---------- */
+.ny-tokens { width: 100%; height: 170px; }
+
+/* ---------- Maintenance ---------- */
+.ny-cats { width: 100%; height: 166px; }
+.ny-life { background: #0B3B2A; padding: 32px 20px 8px; }
+.ny-life .st-h2 { font-size: 34px; color: #fff; }
+.ny-life .st-h2 em { color: var(--st-light); }
+.ny-life .st-icard__p { color: rgba(255, 255, 255, 0.68); font-size: 17px; }
+.ny-steps { display: flex; flex-direction: column; gap: 10px; padding-top: 10px; }
+.ny-steps li { display: flex; align-items: center; gap: 10px; font: 600 16px/1.4 var(--f-body); color: #fff; }
+.ny-steps li::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: var(--st-light); flex: none; }
+
+/* ---------- Community / notices / visitors ---------- */
+.ny-comm { background: #12A470; padding: 32px 8px 48px 20px; }
+.ny-comm .st-eyebrow { color: rgba(255, 255, 255, 0.75); }
+.ny-comm .st-h2 { font-size: 32px; color: #fff; }
+.ny-comm .st-h2 em { color: #FFE08A; }
+.ny-comm .st-icard__p { font-size: 17px; color: rgba(255, 255, 255, 0.8); }
+.ny-notices { background: #E3F5EC; }
+.ny-notices .st-eyebrow { color: #12A470; }
+.ny-notices .st-icard__p { color: rgba(10, 10, 10, 0.65); }
+.ny-visitors { background: #0A0A0A; }
+.ny-visitors .st-eyebrow { color: var(--st-light); }
+.st-icard > .mimg { display: none; }
+
+/* ---------- Design language extras ---------- */
+.ny-components { display: none; }
+
+.ny-status { display: none; }
+.ny-swatches > :nth-child(6) { margin-top: 8px; }
+.ny-ts-1 { font-size: 26px; font-weight: 700; }
+
+/* ---------- Screen wall + portal ---------- */
+.ny-portal { height: 221px; object-fit: cover; }
+.ny-wall { background-color: #072A1E; }
+
+@media (min-width: 1440px) {
+  .ny-hero__stage {
+    position: relative; display: block;
+    width: 1440px; height: 990px; margin: 0 auto; padding: 0;
+  }
+  .ny-hero__stage > * { position: absolute; }
+  .ny-ring { display: block; border-radius: 999px; z-index: 0; }
+  .ny-ring--1 { left: -30px; top: -80px; width: 1500px; height: 1500px; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.07); }
+  .ny-ring--2 { left: 170px; top: 120px; width: 1100px; height: 1100px; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.08); }
+  .ny-ring--3 { left: 370px; top: 320px; width: 700px; height: 700px; box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.09); }
+  .ny-crumb { left: 72px; top: 28px; width: 1296px; z-index: 2; flex-direction: row; justify-content: center; gap: 28px; }
+  .ny-crumb .dot { display: inline; }
+  .ny-hero__title { left: 0; top: 118px; width: 1440px; font-size: 318px; z-index: 1; }
+  .ny-hero__phones { left: 0; top: 330px; width: 1440px; height: 660px; aspect-ratio: auto; z-index: 2; }
+  .ny-hero__chip {
+    display: flex; align-items: center; left: 112px; top: 86px; z-index: 3;
+    padding: 12px 20px; border-radius: 999px; background: #2F6BE4;
+    font: 600 16px/1.4 var(--f-body); color: #fff;
+    transform: rotate(-7deg);
+  }
+
+  .ny-anat { display: block; position: relative; width: 1440px; height: 2077px; padding: 0; }
+  .ny-anat > * { position: absolute; }
+  .ny-anat__screen { left: 395px; top: 0; width: 650px; height: 2077px; }
+  .ny-callout { width: 372px; }
+  .ny-callout__t { font-size: 24px; }
+  .ny-leader { display: block; height: 1.5px; background: rgba(255, 255, 255, 0.35); }
+  .ny-dot { display: block; width: 12px; height: 12px; border-radius: 999px; background: var(--hot); box-shadow: inset 0 0 0 3px #072A1E; }
+
+  .ny-pay { width: 808px; height: 940px; flex: none; }
+  .ny-tokens { width: 1440px; height: 699px; }
+  .ny-cats { height: 616px; }
+
+  .ny-life, .ny-comm { padding: 0; background: none; }
+  .ny-life { --h: 820px; }
+  .ny-life .st-icard__copy { left: 56px; top: 64px; width: 380px; gap: 18px; }
+  .ny-life .st-h2 { font-size: 52px; }
+  .ny-life .st-h2 em { font-size: 1.077em; }
+  .ny-comm { --h: 760px; }
+  .ny-comm .st-icard__copy--lg .st-h2 { font-size: 42px; }
+  .ny-notices, .ny-visitors { background: none; }
+  .st-icard > .mimg { display: block; position: absolute; inset: 0; }
+
+  .ny-status { display: flex; }
+  .ny-swatches > :nth-child(6) { margin-top: 28px; }
+  .ny-ts-1 { font-size: 30px; }
+  .ny-portal { height: 820px; }
+  .ny-components { display: block; width: 100%; height: 470px; border-radius: 36px; object-fit: cover; }
+  .ny-wall { background: #072A1E url('/assets/img/ot5kdDBQwXupXUzb5kCrmOku8.png') center / cover no-repeat; }
+}
+
+/* Page nav colour (Framer sets it per page) */
+.nav { background: #18C489; }
+
+/* Phone-only mockups */
+.st-icard > .ny-mob { display: block; width: 100%; }
+.ny-wallimg { width: 100%; height: 320px; object-fit: cover; border-radius: 40px; }
+@media (max-width: 1439.98px) {
+  .st:not(.sk):not(.sv) .st-next { overflow: clip; }
+  .st:not(.sk):not(.sv) .st-next__copy { min-width: 0; }
+  .st:not(.sk):not(.sv) .st-next__t, .st:not(.sk):not(.sv) .st-next__d { white-space: nowrap; }
+}
+@media (min-width: 1440px) { .ny-mob, .st-icard > .ny-mob { display: none; } }
