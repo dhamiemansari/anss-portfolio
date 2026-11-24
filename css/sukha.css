@@ -229,3 +229,7 @@
 
 /* Page nav colour (Framer sets it per page) */
 .nav { background: #7A8450; }
+/* The heading sample wraps to the column instead of widening it (as in Framer) */
+.sk-type .st-type__scale > div:first-child p { white-space: normal; contain: inline-size; }
+.sk .st-colour { padding: 36px 20px; }
+@media (min-width: 1440px) { .sk .st-colour { padding: 36px; } }

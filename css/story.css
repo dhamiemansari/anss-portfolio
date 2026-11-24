@@ -400,3 +400,9 @@
 /* Framer keeps an empty first line above some headings (16px on desktop, the heading size on phone) */
 .lb::before { content: ""; display: block; height: 1.2em; }
 @media (min-width: 1440px) { .lb::before { height: 19.2px; } }
+
+/* Framer text with auto width never wraps */
+.st-brief__qs > p, .st-type__name span { white-space: nowrap; }
+.st-type__left { gap: 0; }
+.st-type__left { min-width: 0; }
+.st-type__scale p, .st-type__scale span { white-space: nowrap; }

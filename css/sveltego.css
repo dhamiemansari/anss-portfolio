@@ -468,3 +468,4 @@
   .sv-slots > :nth-child(odd) { padding-top: 40px; }
 }
 .sv-rstat { gap: 0; }
+.sv-labelrow { white-space: nowrap; }
