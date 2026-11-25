@@ -30,6 +30,7 @@ assets/img/eraser/        Eraser sprites, stage 1 (full hair) → 6 (bald)
 assets/audio/             eraser-rub.mp3 — looped rubbing sound (loads only after sound is turned on)
 assets/img/, assets/video/  Every image and video, downloaded from Framer
 scripts/localize-assets.sh  Pulls any Framer-hosted images into assets/img/
+scripts/version-assets.py   Adds ?v=<hash> to CSS/JS links — run after editing any CSS or JS
 _headers                  Cloudflare Pages cache headers
 ```
 
@@ -48,6 +49,10 @@ _headers                  Cloudflare Pages cache headers
 ```bash
 python3 -m http.server 8000     # then open http://localhost:8000 (use /about.html etc. — clean URLs like /about only work on Cloudflare)
 ```
+
+## After editing CSS or JS
+Run `python3 scripts/version-assets.py` before committing. It stamps each CSS/JS link with a
+hash of the file, so visitors get the new version immediately instead of a cached old copy.
 
 ## Images
 All images and videos are stored in the repo (`assets/img/`, `assets/video/`); nothing loads from Framer's CDN.
