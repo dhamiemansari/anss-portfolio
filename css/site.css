@@ -124,6 +124,57 @@ button { font: inherit; }
   object-fit: cover; pointer-events: none; user-select: none;
 }
 
+/* Eraser cursor over the portrait (js/eraser.js — mouse only) */
+.reveal.is-eraser, .reveal.is-eraser * { cursor: none; }
+.reveal > canvas.reveal__crumbs { z-index: 1; }
+.eraser {
+  position: fixed; left: 0; top: 0; z-index: 9;
+  width: 0; height: 0;
+  pointer-events: none; user-select: none;
+  opacity: 0; transition: opacity .25s ease;
+  will-change: transform;
+}
+.eraser.is-on { opacity: 1; }
+.eraser__body {
+  position: absolute; width: var(--ew, 96px); height: var(--eh, 160px);
+  will-change: transform;
+}
+.eraser__body img {
+  display: block; width: 100%; height: 100%;
+  filter: drop-shadow(-3px 6px 6px rgba(0,0,0,.28));
+}
+.eraser__note {
+  position: absolute; left: 26px; top: -96px; width: max-content;
+  font: 400 26px/1 var(--f-hand); color: #fff;
+  transform: rotate(-6deg) scale(.6); transform-origin: left bottom;
+  opacity: 0; transition: opacity .25s ease, transform .4s cubic-bezier(.3,1.6,.5,1);
+  text-shadow: 0 2px 0 rgba(0,0,0,.18);
+}
+.eraser__note.is-on { opacity: 1; transform: rotate(-6deg) scale(1); }
+.eraser__say {
+  position: absolute; left: 34px; top: -150px; width: max-content; max-width: 230px;
+  margin: 0; padding: 8px 14px 9px;
+  border-radius: 18px; background: #fff; color: var(--ink);
+  font: 400 21px/1.1 var(--f-hand);
+  box-shadow: 0 6px 16px rgba(0,0,0,.22);
+  transform: rotate(-4deg) scale(.4); transform-origin: left bottom;
+  opacity: 0; transition: opacity .18s ease, transform .35s cubic-bezier(.3,1.7,.5,1);
+}
+.eraser__say::after {
+  content: ""; position: absolute; left: 18px; bottom: -9px;
+  border: 10px solid transparent; border-bottom: 0; border-top-color: #fff;
+  transform: skewX(18deg);
+}
+.eraser__say.is-on { opacity: 1; transform: rotate(-4deg) scale(1); }
+.reveal.is-eraser .eraser-sound {
+  position: absolute; left: 14px; top: 14px; z-index: 3;
+  padding: 7px 12px; border: 0; border-radius: 999px;
+  background: rgba(10,10,10,.72); color: #fff;
+  font: 600 13px/1.2 var(--f-body);
+  cursor: pointer; opacity: .75; transition: opacity .2s ease, background-color .2s ease;
+}
+.reveal.is-eraser .eraser-sound:hover, .reveal.is-eraser .eraser-sound:focus-visible { opacity: 1; background: var(--ink); }
+
 /* ---------- Section label (generic) ---------- */
 .lbl {
   display: flex; gap: 16px; padding-bottom: 12px;

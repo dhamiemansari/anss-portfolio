@@ -22,8 +22,12 @@ css/sukha.css             Sukha-only sections
 css/sveltego.css          SvelteGo-only sections
 js/site.js                Smart nav (hide on scroll), appear-on-scroll, back to top
 js/effects.js             Hero portrait reveal + scroll-fill "About" text
+js/eraser.js              Eraser-character cursor over the hero portrait (mouse only): 6 hair stages, falling crumbs,
+                          chatter + speech bubbles, optional sound (🔈 button), auto-fill finale
 js/case.js                Section-nav scroll-spy on #cs-* sections
 assets/logo.svg           ANSS wordmark
+assets/img/eraser/        Eraser sprites, stage 1 (full hair) → 6 (bald)
+assets/audio/             eraser-rub.mp3 — looped rubbing sound (loads only after sound is turned on)
 assets/img/, assets/video/  Every image and video, downloaded from Framer
 scripts/localize-assets.sh  Pulls any Framer-hosted images into assets/img/
 _headers                  Cloudflare Pages cache headers

@@ -15,9 +15,10 @@
     const mask = document.createElement("canvas"), mctx = mask.getContext("2d");
     const layer = document.createElement("canvas"), lctx = layer.getContext("2d");
     const erase = document.createElement("canvas"), ectx = erase.getContext("2d");
-    const brushSize = +wrap.dataset.brush || 220;
+    let brushSize = +wrap.dataset.brush || 220;
     const softness = +wrap.dataset.softness || 0.55;
-    const healSpeed = +wrap.dataset.heal || 0.018;
+    let healSpeed = +wrap.dataset.heal || 0.018;
+    let fillAnim = null; // { x, y, t0, ms, done }
 
     const baseImg = new Image(); baseImg.decoding = "async"; baseImg.src = wrap.dataset.base;
     const img = new Image(); img.decoding = "async"; img.src = wrap.dataset.reveal;
@@ -75,12 +76,27 @@
       mctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       draw();
     };
-    const loop = () => {
-      mctx.globalCompositeOperation = "destination-out";
-      mctx.fillStyle = "rgba(0,0,0," + healSpeed + ")";
-      mctx.fillRect(0, 0, w, h);
+    const loop = (now) => {
+      if (healSpeed > 0) {
+        mctx.globalCompositeOperation = "destination-out";
+        mctx.fillStyle = "rgba(0,0,0," + healSpeed + ")";
+        mctx.fillRect(0, 0, w, h);
+      }
+      if (fillAnim) {
+        // flood the real photo outwards from (x, y)
+        const f = fillAnim;
+        if (f.t0 == null) f.t0 = now;
+        const p = Math.min(1, (now - f.t0) / f.ms);
+        const e = 1 - Math.pow(1 - p, 3);
+        const far = Math.hypot(Math.max(f.x, w - f.x), Math.max(f.y, h - f.y)) + brushSize;
+        mctx.globalCompositeOperation = "source-over";
+        mctx.fillStyle = "#000";
+        mctx.beginPath(); mctx.arc(f.x, f.y, Math.max(1, far * e), 0, Math.PI * 2); mctx.fill();
+        if (p >= 1) { fillAnim = null; if (f.done) f.done(); }
+      }
       draw();
-      raf = requestAnimationFrame(loop);
+      // once healing is off and nothing is animating, the frame is static
+      raf = healSpeed > 0 || fillAnim ? requestAnimationFrame(loop) : 0;
     };
     const kick = () => { if (!raf) raf = requestAnimationFrame(loop); };
     const onMove = (e) => {
@@ -102,6 +118,13 @@
       if (!e.isIntersecting && raf) { cancelAnimationFrame(raf); raf = 0; }
       else if (e.isIntersecting && active) kick();
     }).observe(wrap);
+    // Hooks for the eraser cursor (js/eraser.js)
+    wrap.revealApi = {
+      get brush() { return brushSize; },
+      setBrush(v) { brushSize = v; },
+      setHeal(v) { healSpeed = v; },
+      fill(x, y, ms, done) { fillAnim = { x, y, ms, done, t0: null }; active = true; kick(); },
+    };
     wrap.addEventListener("pointermove", onMove);
     wrap.addEventListener("pointerdown", onMove);
     wrap.addEventListener("pointerleave", () => { last = null; });
